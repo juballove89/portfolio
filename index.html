@@ -97,6 +97,18 @@ nav a:hover{opacity:1}
 .sys h4{font-family:var(--serif);font-weight:400;font-size:21px;letter-spacing:-.02em;margin:14px 0 10px}
 .sys p{color:var(--ink2);font-size:14.5px}
 .sys .tags{margin-top:16px;font-size:11px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc article{border:1px solid var(--line);padding:36px 32px 34px;display:flex;flex-direction:column;transition:border-color .3s,background .3s}
+.svc article:hover{border-color:#4a4337;background:var(--bg2)}
+.svc article.on{border-color:var(--brass)}
+.svc .lv{font-family:var(--latin);font-style:italic;color:var(--brass);font-size:17px}
+.svc h4{font-family:var(--serif);font-weight:400;font-size:30px;letter-spacing:-.03em;margin:10px 0 16px}
+.svc .d{color:var(--ink2);font-size:15px;min-height:5.4em}
+.svc ul{list-style:none;margin-top:24px;border-top:1px solid var(--line)}
+.svc li{padding:11px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink)}
+.svc .ask{margin-top:auto;padding-top:26px;font-size:13px;letter-spacing:.08em;color:var(--brass)}
+.svc .ask:hover{color:var(--ink)}
+.svc li:before{content:"— ";color:var(--brass)}
 .craft{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .craft h4{font-family:var(--serif);font-weight:400;font-size:21px;margin:22px 0 8px;letter-spacing:-.02em}
 .craft p{color:var(--ink2);font-size:14.5px}
@@ -145,6 +157,8 @@ footer{padding:30px 0;border-top:1px solid var(--line);font-size:12px;color:var(
   .scale .bar{height:1px}
   .craft{grid-template-columns:1fr;gap:48px}
   .sys{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}
+  .svc .d{min-height:0}
   .sys-lead{margin:-24px 0 36px}
   .outlook li{grid-template-columns:48px 1fr}
   .rec tr{display:block;border-top:1px solid var(--line);padding:18px 0}
@@ -164,7 +178,7 @@ footer{padding:30px 0;border-top:1px solid var(--line);font-size:12px;color:var(
 
 <nav>
   <a class="mark" href="#">Jeong Jooyeong</a>
-  <ul><li><a href="#work">WORK</a></li><li><a href="#outlook">OUTLOOK</a></li><li><a href="#record">RECORD</a></li><li><a href="#contact">CONTACT</a></li></ul>
+  <ul><li><a href="#work">WORK</a></li><li><a href="#outlook">OUTLOOK</a></li><li><a href="#record">RECORD</a></li><li><a href="#services">SERVICES</a></li><li><a href="#contact">CONTACT</a></li></ul>
 </nav>
 
 <header class="hero">
@@ -346,12 +360,41 @@ footer{padding:30px 0;border-top:1px solid var(--line);font-size:12px;color:var(
 </div>
 </section>
 
+<section class="ch" id="services">
+<div class="wrap">
+  <div class="ch-head rv"><div class="num">07 — Services</div><h2>장치 하나부터<br><em>공간 전체</em>까지 맡아 드립니다.</h2></div>
+  <div class="svc">
+    <article class="rv">
+      <div class="lv">Level 01</div>
+      <h4>장치 단품</h4>
+      <p class="d">운영 중인 테마에 장치 하나를 더하는 일. 기존 흐름을 해치지 않게 설계하고, 제작해서 설치까지 합니다.</p>
+      <ul><li>장치 기획 · 회로 설계</li><li>제작 · 현장 설치</li><li>기존 큐 · 운영 동선에 연결</li></ul>
+      <a class="ask" href="mailto:juballove89@gmail.com?subject=%5B%EC%9E%A5%EC%B9%98%20%EB%8B%A8%ED%92%88%20%EB%AC%B8%EC%9D%98%5D%20&body=%EA%B3%B5%EA%B0%84/%EB%A7%A4%EC%9E%A5%20%EC%9C%84%EC%B9%98%3A%0A%EC%9B%90%ED%95%98%EB%8A%94%20%EA%B2%83%3A%0A%EC%98%88%EC%82%B0%C2%B7%EC%9D%BC%EC%A0%95%3A%0A">견적 문의 →</a>
+    </article>
+    <article class="rv">
+      <div class="lv">Level 02</div>
+      <h4>시스템 구축</h4>
+      <p class="d">조명, 음향, 잠금장치, 연출이 한 번에 움직이는 쇼 컨트롤과 예약·운영 자동화를 깝니다.</p>
+      <ul><li>쇼 컨트롤 (QLab · MA · PLC)</li><li>장치 설계 · 배선 · 설치</li><li>예약 · 알림 · 운영 자동화</li></ul>
+      <a class="ask" href="mailto:juballove89@gmail.com?subject=%5B%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%20%EB%AC%B8%EC%9D%98%5D%20&body=%EA%B3%B5%EA%B0%84/%EB%A7%A4%EC%9E%A5%20%EC%9C%84%EC%B9%98%3A%0A%EC%9B%90%ED%95%98%EB%8A%94%20%EA%B2%83%3A%0A%EC%98%88%EC%82%B0%C2%B7%EC%9D%BC%EC%A0%95%3A%0A">견적 문의 →</a>
+    </article>
+    <article class="rv on">
+      <div class="lv">Level 03</div>
+      <h4>공간 전체</h4>
+      <p class="d">빈 공간에서 시작해 손님이 들어오는 날까지. 기획부터 오픈, 운영 안정화까지 끝까지 책임집니다.</p>
+      <ul><li>공간 · 스토리 · 퍼즐 기획</li><li>장치 · 인테리어 · 시공 관리</li><li>오픈 · 직원 교육 · 운영 세팅</li></ul>
+      <a class="ask" href="mailto:juballove89@gmail.com?subject=%5B%EA%B3%B5%EA%B0%84%20%EC%A0%84%EC%B2%B4%20%EB%AC%B8%EC%9D%98%5D%20&body=%EA%B3%B5%EA%B0%84/%EB%A7%A4%EC%9E%A5%20%EC%9C%84%EC%B9%98%3A%0A%EC%9B%90%ED%95%98%EB%8A%94%20%EA%B2%83%3A%0A%EC%98%88%EC%82%B0%C2%B7%EC%9D%BC%EC%A0%95%3A%0A">견적 문의 →</a>
+    </article>
+  </div>
+</div>
+</section>
+
 <section class="contact" id="contact">
 <div class="wrap rv">
   <div class="avatar" style="background-image:url(img/profile.jpg)" role="img" aria-label="정주영"></div>
   <div class="eyebrow" style="margin-bottom:26px">Now available</div>
   <h2>다음 공간을<br><b>함께 만들 팀</b>을 찾습니다.</h2>
-  <p>방탈출, 이머시브 공연, IP 전시, 체험형 공간. 기획에서 오픈, 운영까지 맡길 사람이 필요하다면 연락 주세요.</p>
+  <p>정규직, 프로젝트, 외주 모두 열려 있습니다. 장치 하나든 공간 전체든, 같이 만들 일이 있다면 연락 주세요.</p>
   <a class="btn" href="mailto:juballove89@gmail.com">juballove89@gmail.com <span>→</span></a>
 </div>
 </section>

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>정주영 — 체험형 콘텐츠 PM</title>
+<meta name="description" content="방탈출 매장 운영부터 IP 체험관, 이머시브 공연까지. 사람이 걸어 들어가는 이야기를 기획하고, 짓고, 운영해 온 정주영의 포트폴리오.">
+<meta property="og:title" content="정주영 — 체험형 콘텐츠 PM">
+<meta property="og:description" content="사람이 걸어 들어가는 이야기를 만듭니다.">
+<meta property="og:image" content="img/reviver-sign.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --bg:#0f0e0c; --bg2:#161512; --ink:#ece6dc; --ink2:#b3ab9f; --dim:#6f685e;
+  --line:#2a2722; --brass:#b8955e;
+  --serif:'Noto Serif KR',serif; --latin:'Cormorant Garamond',serif;
+  --sans:'Pretendard',-apple-system,'Apple SD Gothic Neo',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;word-break:keep-all}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.eyebrow{font-family:var(--latin);font-style:italic;font-size:18px;color:var(--brass);letter-spacing:.02em}
+.label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--dim)}
+
+nav{position:fixed;inset:0 0 auto;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 32px;mix-blend-mode:difference;color:#fff}
+nav .mark{font-family:var(--latin);font-size:20px;letter-spacing:.04em}
+nav ul{display:flex;gap:28px;list-style:none;font-size:12px;letter-spacing:.2em}
+nav a{opacity:.75;transition:opacity .2s}
+nav a:hover{opacity:1}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url(img/reviver-sign.jpg) 70% 40%/cover;opacity:.42;transform:scale(1.04)}
+.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,14,12,.2) 0%,rgba(15,14,12,.55) 55%,var(--bg) 100%),linear-gradient(90deg,var(--bg) 0%,transparent 70%)}
+.hero .wrap{position:relative;width:100%;padding-bottom:12vh}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(40px,6.6vw,92px);line-height:1.14;letter-spacing:-.035em;margin:26px 0 30px;max-width:11em}
+.hero h1 b{font-weight:600}
+.hero p{max-width:34em;color:var(--ink2);font-size:clamp(16px,1.35vw,18px)}
+.facts{display:flex;gap:56px;margin-top:56px;padding-top:26px;border-top:1px solid var(--line);max-width:760px}
+.facts div{font-family:var(--latin);font-size:clamp(34px,3.8vw,48px);line-height:1}
+.facts span{display:block;font-family:var(--sans);font-size:12px;color:var(--dim);margin-top:10px;letter-spacing:.04em}
+
+.ch{padding:150px 0;border-top:1px solid var(--line)}
+.ch-head{display:grid;grid-template-columns:200px 1fr;gap:40px;margin-bottom:80px}
+.ch-head .num{font-family:var(--latin);font-size:15px;color:var(--brass);letter-spacing:.12em;padding-top:12px}
+.ch-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.8vw,50px);line-height:1.3;letter-spacing:-.03em}
+.ch-head h2 em{font-style:normal;font-weight:600}
+
+.row{display:grid;grid-template-columns:200px 1fr 1fr;gap:40px;padding:56px 0;border-top:1px solid var(--line);align-items:start}
+.row:first-of-type{border-top:0;padding-top:0}
+.row .meta{font-size:13px;color:var(--dim);line-height:1.9}
+.row .meta b{display:block;color:var(--ink2);font-weight:500;font-size:14px}
+.row h3{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.2vw,29px);line-height:1.45;letter-spacing:-.025em;margin-bottom:20px}
+.row p{color:var(--ink2);font-size:15.5px}
+.row p + p{margin-top:12px}
+.fig{position:relative;aspect-ratio:4/3;background:var(--bg2) center/cover;overflow:hidden}
+.fig.tall{aspect-ratio:3/4}
+.fig.empty{display:flex;align-items:flex-end;padding:18px;background:repeating-linear-gradient(135deg,var(--bg2) 0 14px,#13120f 14px 28px)}
+.fig.empty:before{content:attr(data-note);font-size:11px;letter-spacing:.2em;color:#4c463e}
+
+.cap,.row p.cap{font-size:11px;color:var(--dim);margin-top:10px;letter-spacing:.04em}
+.side{align-self:stretch;border-left:1px solid var(--line);padding-left:32px;font-family:var(--latin);font-size:clamp(30px,3.2vw,44px);line-height:1.1;color:#3d3830;display:flex;flex-direction:column;justify-content:center}
+.side span{font-family:var(--sans);font-size:11px;letter-spacing:.24em;color:var(--brass);margin-top:16px}
+.stat{display:flex;align-items:baseline;gap:22px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.stat .v{font-family:var(--latin);font-size:clamp(52px,5.6vw,76px);line-height:.9}
+.stat .v.on{color:var(--brass)}
+.stat .arr{color:var(--dim);font-size:22px}
+.stat small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--dim);margin-top:12px}
+
+.strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:8px 0 0 240px}
+.strip .fig{aspect-ratio:4/3}
+.credit{font-size:11px;color:var(--dim);margin:12px 0 0 240px;letter-spacing:.04em}
+.quote{margin-top:30px;padding-left:20px;border-left:1px solid var(--brass)}
+.quote q{font-family:var(--serif);font-size:18px;color:var(--ink);quotes:"“" "”"}
+.quote a{display:block;font-size:12px;color:var(--dim);margin-top:8px;letter-spacing:.04em}
+.quote a:hover{color:var(--brass)}
+
+.scale{display:grid;grid-template-columns:1fr 1px 1fr;gap:64px;align-items:end}
+.scale .bar{background:var(--line);align-self:stretch}
+.scale .n{font-family:var(--latin);font-size:clamp(110px,15vw,210px);line-height:.8;letter-spacing:-.04em}
+.scale .n{display:flex;align-items:flex-end;gap:14px}
+.scale .n small{font-family:var(--sans);font-size:12px;letter-spacing:.24em;color:var(--brass);padding-bottom:.9em;line-height:1}
+.scale h4{font-family:var(--serif);font-weight:400;font-size:22px;margin:34px 0 10px}
+.scale p{color:var(--ink2);font-size:15px}
+
+.craft{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.craft h4{font-family:var(--serif);font-weight:400;font-size:21px;margin:22px 0 8px;letter-spacing:-.02em}
+.craft p{color:var(--ink2);font-size:14.5px}
+.craft .fig{aspect-ratio:4/5}
+
+.outlook{display:grid;grid-template-columns:200px 1fr;gap:40px}
+.outlook ol{list-style:none;counter-reset:o}
+.outlook li{counter-increment:o;display:grid;grid-template-columns:70px 1fr;gap:20px;padding:34px 0;border-top:1px solid var(--line)}
+.outlook li:before{content:"0" counter(o);font-family:var(--latin);font-size:28px;color:var(--brass);line-height:1.1}
+.outlook h4{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:-.02em;margin-bottom:10px}
+.outlook p{color:var(--ink2);font-size:15.5px;max-width:40em}
+
+.rec{width:100%;border-collapse:collapse}
+.rec td{padding:22px 0;border-top:1px solid var(--line);vertical-align:top;font-size:15px}
+.rec td:first-child{width:200px;color:var(--dim);font-size:13px;letter-spacing:.04em;padding-top:25px}
+.rec td:nth-child(2){font-family:var(--serif);font-size:18px;width:38%}
+.rec td:last-child{color:var(--ink2)}
+.rec tr:last-child td{border-bottom:1px solid var(--line)}
+
+.contact{padding:190px 0 150px;text-align:center;border-top:1px solid var(--line)}
+.contact h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,6.4vw,88px);line-height:1.18;letter-spacing:-.035em}
+.contact h2 b{font-weight:600}
+.contact p{color:var(--ink2);margin:30px auto 48px;max-width:30em}
+.avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 30px;background:center 25%/cover;filter:grayscale(1) contrast(1.05);border:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;gap:14px;border:1px solid var(--brass);color:var(--ink);padding:17px 34px;font-size:14px;letter-spacing:.08em;transition:background .25s,color .25s}
+.btn:hover{background:var(--brass);color:var(--bg)}
+footer{padding:30px 0;border-top:1px solid var(--line);font-size:12px;color:var(--dim);display:flex;justify-content:space-between}
+
+.js .rv{opacity:0}
+.rv.in{opacity:1}
+.hero .line{display:block}
+.js .hero .line,.js .hero .eyebrow,.js .hero p,.js .facts{opacity:0}
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--brass);transform-origin:0 50%;transform:scaleX(0);z-index:20}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .hero .line,.js .hero .eyebrow,.js .hero p,.js .facts{opacity:1}}
+
+@media (max-width:900px){
+  .wrap{padding:0 20px}
+  nav{padding:18px 20px} nav ul{display:none}
+  .hero .wrap{padding-bottom:9vh}
+  .facts{gap:28px;flex-wrap:wrap}
+  .ch{padding:96px 0}
+  .ch-head,.row,.outlook{grid-template-columns:1fr;gap:18px}
+  .ch-head{margin-bottom:48px}
+  .row{padding:44px 0}
+  .scale{grid-template-columns:1fr;gap:48px}
+  .scale .bar{height:1px}
+  .craft{grid-template-columns:1fr;gap:48px}
+  .outlook li{grid-template-columns:48px 1fr}
+  .rec tr{display:block;border-top:1px solid var(--line);padding:18px 0}
+  .rec td{display:block;width:auto!important;border:0!important;padding:3px 0!important}
+  .rec tr:last-child{border-bottom:1px solid var(--line)}
+  .contact{padding:120px 0 100px}
+  footer{flex-direction:column;gap:6px}
+  .fig.empty,.fig.tall.empty{aspect-ratio:16/7}
+  .strip,.credit{margin-left:0}
+  .side{display:none}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip .fig:first-child{grid-column:span 2}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="mark" href="#">Jeong Jooyeong</a>
+  <ul><li><a href="#work">WORK</a></li><li><a href="#outlook">OUTLOOK</a></li><li><a href="#record">RECORD</a></li><li><a href="#contact">CONTACT</a></li></ul>
+</nav>
+
+<header class="hero">
+  <div class="bg"></div>
+  <div class="wrap">
+    <div class="eyebrow">Experience Content PM · Seoul</div>
+    <h1><span class="line">사람이 걸어 들어가는</span><span class="line"><b>이야기</b>를 만듭니다.</span></h1>
+    <p>방탈출 매장 운영에서 IP 체험관, 이머시브 공연까지. 11년 동안 기획하고, 짓고, 열고, 운영했습니다. 잘된 일도 실패한 일도 직접 겪었기에, 될 기획과 안 될 기획을 구분할 수 있습니다.</p>
+    <div class="facts">
+      <div data-count="11">11<span>년의 현장</span></div>
+      <div data-count="4">4<span>개의 매장</span></div>
+      <div data-count="20" data-suffix="+">20+<span>명 규모 프로젝트 리드</span></div>
+      <div data-count="100" data-suffix="%">100%<span>1년 예약률</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="ch" id="work">
+<div class="wrap">
+  <div class="ch-head rv"><div class="num">01 — Operate</div><h2>정점의 매장을 운영하고,<br>빈 매장을 <em>가득</em> 채웠습니다.</h2></div>
+
+  <article class="row rv">
+    <div class="meta"><b>키이스케이프 홍대점</b>가맹점주 · 지분 100%<br>2018 — 2025</div>
+    <div>
+      <h3>업계 최상위 브랜드의 매장을 7년간 맡았습니다.</h3>
+      <p>국내에서 손꼽히는 방탈출 브랜드의 홍대점을 직접 운영했습니다. 최상위 매장이 손님을 맞고, 직원을 꾸리고, 품질을 유지하는 방식을 안에서 익혔습니다.</p>
+    </div>
+    <div class="side">KEYESCAPE<br>HONGDAE<span>7 YEARS</span></div>
+  </article>
+
+  <article class="row rv">
+    <div class="meta"><b>에베레스트 이스케이프</b>대표 · 창업<br>2022 — 2026</div>
+    <div>
+      <h3>예약률 60%의 매장을 1년 내내 만석으로 만들었습니다.</h3>
+      <p>70평 규모 단일 테마, 3~4시간 플레이의 대형 방탈출 「EVEREST」를 직접 설계했습니다. 공간, 스토리, 퍼즐, 장치, 인테리어를 모두 만들었고 배우로도 직접 섰습니다.</p>
+      <div class="stat">
+        <div><div class="v" data-count="60" data-suffix="%">60%</div><small>BEFORE</small></div><span class="arr">→</span>
+        <div><div class="v on" data-count="100" data-suffix="%">100%</div><small>12 MONTHS</small></div>
+      </div>
+      <div class="quote">
+        <q>7만원에도 자리없어 못한다</q>
+        <a href="https://www.joongang.co.kr/article/25276252" target="_blank" rel="noopener">중앙일보 · 2024.09 ↗</a>
+      </div>
+    </div>
+    <div class="fig tall" style="background-image:url(img/everest_poster.jpg)" role="img" aria-label="EVEREST 테마 포스터"></div>
+  </article>
+  <div class="strip rv">
+    <div class="fig" style="background-image:url(img/everest-invite.jpg)" role="img" aria-label="이름이 적힌 초대장"></div>
+    <div class="fig" style="background-image:url(img/everest-login.jpg)" role="img" aria-label="LOG-IN 입구"></div>
+    <div class="fig" style="background-image:url(img/everest-sign.jpg);background-position:center 30%" role="img" aria-label="매장 안내 사인"></div>
+  </div>
+  <p class="credit">EVEREST · 초대장, LOG-IN 입구, 매장 사인 — 사진 중앙일보, 에베레스트 이스케이프 SNS</p>
+</div>
+</section>
+
+<section class="ch">
+<div class="wrap">
+  <div class="ch-head rv"><div class="num">02 — Build</div><h2>두 명의 작업실부터<br><em>스무 명의 현장</em>까지.</h2></div>
+
+  <div class="scale rv">
+    <div>
+      <div class="n">2<small>PEOPLE</small></div>
+      <h4>셜록홈즈 외주 · 「카더」</h4>
+      <p>둘이서 테마 하나를 기획부터 시공까지 끝냈습니다. 작은 팀에서 무엇을 직접 하고 무엇을 덜어낼지 판단하는 법을 압니다.</p>
+    </div>
+    <div class="bar"></div>
+    <div>
+      <div class="n" data-count="20" data-suffix="+">20+<small>PEOPLE</small></div>
+      <h4>REVIVER · 네이버웹툰 오프라인</h4>
+      <p>스무 명 넘게 투입된 대규모 공사를 대표로 한 번, 제작팀장으로 한 번 이끌었습니다. 일정, 예산, 협력사를 한 흐름으로 묶는 일입니다.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:110px">
+  <article class="row rv">
+    <div class="meta"><b>로드유니티 · UMEPLAY</b>제작팀장<br>2026.06 — 2026.10</div>
+    <div>
+      <h3>해외 원판 이머시브 공연을 한국 무대에 다시 세웠습니다.</h3>
+      <p>중국에서 들여온 공연 「REVIVER」를 국내 매장 구조에 맞게 재구성해 2026년 10월 28일 정식 오픈했습니다. 장비 설계와 배선, 큐 프로그래밍, 리허설, 직원 교육까지 이끌었습니다.</p>
+      <p>QLab · grandMA2 · PLC를 잇는 쇼 컨트롤 프로그램을 직접 개발했고, 예약·멤버십 홈페이지부터 공연 사진 자동 전송까지 관람 경험 전체를 설계했습니다.</p>
+    </div>
+    <div class="fig tall" style="background-image:url(img/reviver-actor.jpg)" role="img" aria-label="REVIVER 캐릭터 컷"></div>
+  </article>
+
+  <article class="row rv">
+    <div class="meta"><b>미스터리담</b>이사<br>2025.12 — 2026.10</div>
+    <div>
+      <h3>새 매장 하나의 라인업을 처음부터 짰습니다.</h3>
+      <p>미스터리담의 신규 매장을 열며 「백석담」을 제작했습니다. 매장의 첫인상과 재방문 동선까지 함께 설계했습니다.</p>
+    </div>
+    <div class="side">백석담<span>135 MIN · 추리</span></div>
+  </article>
+
+  <article class="row rv">
+    <div class="meta"><b>네이버웹툰 오프라인</b>법인 대표 · 지분 50%<br>2020 — 2022</div>
+    <div>
+      <h3>가장 비싼 수업이었습니다.</h3>
+      <p>역삼동 단독 건물 4개 층을 「신의 탑」 「여신강림」 「호랑이 형님」 「유미의 세포들」 등 네이버웹툰 IP 6개로 채운 국내 최초의 웹툰 체험관입니다. 언리얼컴퍼니와 50:50으로 세운 법인의 대표로서 방탈출 테마와 전시관, 공사 전체를 책임졌습니다. 사업으로는 실패했지만, 업계 최상위 수준의 인테리어와 공간 연출을 처음부터 끝까지 다뤘습니다.</p>
+      <p>어디서 비용이 새고 어디에 써야 하는지, 그때 배운 기준으로 지금의 예산을 짭니다.</p>
+    </div>
+    <div><div class="fig" style="background-image:url(img/webtoon.jpg)" role="img" aria-label="역삼동 네이버 웹툰 오프라인 건물"></div><p class="cap">역삼동 단독 건물 · 사진 언리얼컴퍼니 (스포츠서울, 2020.11)</p></div>
+  </article>
+  </div>
+</div>
+</section>
+
+<section class="ch">
+<div class="wrap">
+  <div class="ch-head rv"><div class="num">03 — Craft</div><h2>손에 쥐는 소품에서<br><em>방을 압도하는</em> 조형까지.</h2></div>
+  <div class="craft">
+    <div class="rv">
+      <div class="fig" style="background-image:url(img/book.jpg);background-size:contain;background-repeat:no-repeat;background-color:#1b1915" role="img" aria-label="방탈출 퍼즐북 표지"></div>
+      <h4>퍼즐 · 책으로 검증받다</h4>
+      <p>방탈출 퍼즐을 종이로 옮긴 『정탐정과 미스터리 실종사건』(한빛미디어, 2025). 매장 밖의 독자들에게 팔려 교보문고 취미 분야 주간 5위에 올랐습니다.</p>
+    </div>
+    <div class="rv">
+      <div class="fig" style="background-image:url(img/tape-plate.jpg)" role="img" aria-label="REVIVER 첫 방의 금속 저장매체와 슬롯"></div>
+      <h4>소품 · 1mm의 몰입</h4>
+      <p>REVIVER 첫 방의 금속 '저장매체'. 반으로 밀면 계단 모양이 되고, 같은 모양의 홈에 정확히 맞물려야 다음 장면이 열립니다. 손에 쥐는 순간의 무게와 맞물리는 감각까지 설계했습니다.</p>
+    </div>
+    <div class="rv">
+      <div class="fig" style="background-image:url(img/muke.jpg)" role="img" aria-label="네이버웹툰 오프라인 옥상의 거대 무케 조형물"></div>
+      <h4>조형 · 건물 위의 무케</h4>
+      <p>네이버웹툰 오프라인 옥상에 올린 「호랑이 형님」 무케 대형 조형물. 거리에서 건물을 알아보게 만드는 랜드마크이자 포토존으로, 방탈출 업계에서 유례없는 크기입니다.</p>
+      <p class="cap">사진 네이버 블로그 kkw2kky</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="ch" id="outlook">
+<div class="wrap">
+  <div class="ch-head rv"><div class="num">04 — Outlook</div><h2>다음 1~2년의 흐름을<br><em>먼저</em> 보고 왔습니다.</h2></div>
+  <div class="outlook">
+    <div class="label" style="padding-top:36px;line-height:2">운영자 · 제작자 ·<br>IP 사업 대표 ·<br>공연 제작팀장의 자리에서</div>
+    <ol>
+      <li class="rv"><div><h4>해외 최상위 이머시브가 들어옵니다</h4><p>지금 해외에서 가장 완성도 높은 이머시브 테마들을 현지에서 직접 체험했고, 이 작품들은 국내 수입을 앞두고 있습니다. 들여온 작품을 한국 공간에 맞게 다시 세우는 일은 REVIVER에서 이미 해냈습니다.</p></div></li>
+      <li class="rv"><div><h4>방은 작아지고, 경험은 깊어집니다</h4><p>퍼즐로 채운 방에서 배우·조명·음향이 함께 움직이는 공연형 체험으로 무게가 옮겨 가고 있습니다. 손님은 더 높은 가격을 내고 더 깊은 몰입을 원합니다.</p></div></li>
+      <li class="rv"><div><h4>기술이 운영비를 결정합니다</h4><p>쇼 컨트롤과 예약·안내 자동화가 인력 구성과 사고율을 좌우합니다. 만드는 사람과 운영하는 사람의 감각이 한 사람 안에 있어야 오래 남습니다.</p></div></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="ch" id="record">
+<div class="wrap">
+  <div class="ch-head rv"><div class="num">05 — Record</div><h2>기록</h2></div>
+  <table class="rec rv">
+    <tr><td>2026.06 — 2026.10</td><td>로드유니티 · UMEPLAY</td><td>제작팀장 · 이머시브 시네마 REVIVER 오픈</td></tr>
+    <tr><td>2026.05</td><td>셜록홈즈</td><td>외주 제작 · 「카더」 2인 제작</td></tr>
+    <tr><td>2025.12 — 2026.10</td><td>미스터리담</td><td>이사 · 신규 매장 오픈, 「백석담」 제작</td></tr>
+    <tr><td>2025</td><td>『정탐정과 미스터리 실종사건』</td><td>한빛미디어 · 교보문고 취미 주간 5위</td></tr>
+    <tr><td>2022 — 2026</td><td>에베레스트 이스케이프</td><td>대표 · 창업, 예약률 60% → 100%, 매각</td></tr>
+    <tr><td>2020 — 2022</td><td>네이버웹툰 오프라인</td><td>법인 대표 · 지분 50% · 웹툰 IP 방탈출 테마와 전시관</td></tr>
+    <tr><td>2018 — 2025</td><td>키이스케이프 홍대점</td><td>가맹점주 · 7년 운영, 매각</td></tr>
+    <tr><td>2015 — 2019</td><td>LG디스플레이</td><td>회로설계 연구원 → 선임연구원</td></tr>
+    <tr><td>2007 — 2015</td><td>연세대학교</td><td>전기전자공학부</td></tr>
+  </table>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap rv">
+  <div class="avatar" style="background-image:url(img/profile.jpg)" role="img" aria-label="정주영"></div>
+  <div class="eyebrow" style="margin-bottom:26px">Now available</div>
+  <h2>다음 공간을<br><b>함께 만들 팀</b>을 찾습니다.</h2>
+  <p>방탈출, 이머시브 공연, IP 전시, 체험형 공간. 기획에서 오픈, 운영까지 맡길 사람이 필요하다면 연락 주세요.</p>
+  <a class="btn" href="mailto:juballove89@gmail.com">juballove89@gmail.com <span>→</span></a>
+</div>
+</section>
+
+<div class="wrap"><footer><span>© 2026 Jeong Jooyeong</span><span>Experience Content PM</span></footer></div>
+
+<div class="progress" aria-hidden="true"></div>
+<script type="module">
+import { animate, scroll, inView, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.documentElement.classList.add('js');
+if (reduce) { document.querySelectorAll('.rv').forEach(e=>e.classList.add('in')); }
+else {
+  // 상단 진행 바
+  scroll(animate('.progress', { scaleX: [0, 1] }, { ease: 'linear' }));
+
+  // 히어로: 줄 단위로 떠오르고, 배경은 스크롤에 따라 천천히 밀려남
+  animate('.hero .line', { opacity: [0, 1], y: [40, 0], filter: ['blur(8px)', 'blur(0px)'] },
+          { delay: stagger(0.14, { startDelay: 0.2 }), duration: 1.1, ease: [0.22, 1, 0.36, 1] });
+  animate('.hero .eyebrow, .hero p, .facts', { opacity: [0, 1], y: [16, 0] },
+          { delay: stagger(0.12, { startDelay: 0.7 }), duration: 0.9 });
+  scroll(animate('.hero .bg', { y: [0, 180], scale: [1.04, 1.18], opacity: [0.42, 0.12] }, { ease: 'linear' }),
+         { target: document.querySelector('.hero'), offset: ['start start', 'end start'] });
+
+  // 섹션 진입: 아래에서 부드럽게
+  inView('.rv', ({ target: el }) => {
+    el.classList.add('in');
+    animate(el, { opacity: [0, 1], y: [28, 0] }, { duration: 1, ease: [0.22, 1, 0.36, 1] });
+  }, { margin: '0px 0px -10% 0px' });
+
+  // 숫자 카운트업
+  const count = (el, to, suffix = '', dur = 1.6) => {
+    animate(0, to, { duration: dur, ease: [0.16, 1, 0.3, 1], onUpdate: v => el.textContent = Math.round(v) + suffix });
+  };
+  inView('[data-count]', ({ target: el }) => {
+    const to = +el.dataset.count, suf = el.dataset.suffix || '';
+    const t = el.firstChild; const span = document.createElement('i'); span.style.fontStyle = 'normal';
+    el.replaceChild(span, t); count(span, to, suf);
+  });
+
+  // 사진: 스크롤에 따라 살짝 확대되는 패럴랙스
+  document.querySelectorAll('.fig[style*="background-image"]').forEach(f => {
+    scroll(animate(f, { backgroundPositionY: ['35%', '65%'] }, { ease: 'linear' }),
+           { target: f, offset: ['start end', 'end start'] });
+  });
+}
+</script>
+</body>
+</html>
